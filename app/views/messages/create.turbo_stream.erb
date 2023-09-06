@@ -1,0 +1,6 @@
+
+<%= turbo_stream.append "messages", @message %>
+
+<%= turbo_stream.replace "#{dom_id(@message.chat)}_message_form" do %>
+  <%= render "form", chat: @message.chat %>
+<% end %>

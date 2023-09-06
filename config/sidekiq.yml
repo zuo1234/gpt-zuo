@@ -1,0 +1,13 @@
+:concurrency: 2
+:pidfile: tmp/pids/sidekiq.pid
+:logfile: log/sidekiq.log # 输出的日志地址
+:queues:
+  - default
+  - [important, 1]
+  - [critical, 3]
+  - [mailers, 1]
+staging:
+  :concurrency: 2
+production:
+  :concurrency: 10
+

@@ -1,0 +1,7 @@
+sidekiq_redis:
+  url: 'redis://<%= ENV['REDIS_HOST'] || "127.0.0.1" %>:6379/1'
+  password:
+redis:
+  url: 'redis://<%= ENV['REDIS_HOST'] || "127.0.0.1" %>:6379/1'
+  password:
+  namespace: madm
