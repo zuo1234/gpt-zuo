@@ -21,7 +21,7 @@ class ProcessMessageJob < ApplicationJob
     #   response_message.content = response_message.response.dig("choices", 0, "message", "content")
     #   response_message.completed!
     # end
-    response_message.content = "回复"
+    response_message.content = "xxx"
     response_message.completed!
   end
 end

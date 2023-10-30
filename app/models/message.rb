@@ -11,5 +11,5 @@ class Message < ApplicationRecord
     failed: 2
   }
 
-  broadcasts_to ->(message) { [ message.chat, "messages" ] }, inserts_by: :prepend
+  broadcasts_to ->(message) { [ message.chat, "messages" ] }#, inserts_by: :append
 end

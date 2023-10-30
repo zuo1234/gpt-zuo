@@ -9,10 +9,9 @@
   <% end %>
 </div>
 
-<div class="list-group">
+<ul class="list-group">
   <% Chat.all.order(id: :desc).each do |chat| %>
-    <a href="<%= chat_path(chat) %>" class="list-group-item">
-      #<%= chat.id %>
-    </a>
+    <li class="list-group-item"><a href="<%= chat_path(chat) %>" >#<%= chat.id %>
+    </a></li>
   <% end %>
-</div>
+</ul>
